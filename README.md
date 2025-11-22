@@ -20,6 +20,8 @@ npm run dev # Start the development server
 npm run build # Build the project for production
 ```
 
+The build script in package.json has been configured to copy `index.html` to `404.html` to support static site hosting on Github pages.
+
 ### Usage
 
 Each tool can be accessed via the main interface. Simply select the desired tool and follow the on-screen instructions to input your data and obtain the results.
