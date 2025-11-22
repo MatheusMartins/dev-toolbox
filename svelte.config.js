@@ -7,7 +7,7 @@ const config = {
         adapter: adapter({
             pages: 'build',
             assets: 'build',
-            fallback: 'dev-toolbox/index.html' 
+            fallback: 'index.html' 
         }),
         prerender: {
             entries: ['*'] 
