@@ -8,6 +8,8 @@
     console.log(tool.slug);
   }
 
+  const URLPREFIX = '/dev-toolbox';
+
 </script>
 
 <svelte:head>
@@ -22,12 +24,12 @@
 			<div class="p-2">
 				<nav>
 					<ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/tools">Tools</a></li>
+            <li><a href={`${URLPREFIX}/`}>Home</a></li>
+            <li><a href={`${URLPREFIX}/tools`}>Tools</a></li>
             <br />
             <p class="font-bold">All Tools:</p>
             {#each tools as tool}
-              <li><a href={`/tools/${tool.slug}`}>{tool.title}</a></li>
+              <li><a href={`${URLPREFIX}/tools/${tool.slug}`}>{tool.title}</a></li>
             {/each}
             <br />
 					</ul>

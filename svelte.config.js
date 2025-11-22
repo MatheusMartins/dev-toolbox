@@ -13,7 +13,8 @@ const config = {
             entries: ['*'] 
         },
         paths: {
-			base: '/dev-toolbox'
+			base: process.argv.includes('dev') ? '' : '/dev-toolbox',
+            relative: false
         }
     }
 };
