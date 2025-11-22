@@ -7,10 +7,17 @@ const config = {
         adapter: adapter({
             pages: 'build',
             assets: 'build',
-            fallback: 'index.html' 
+            fallback: 'index.html',
+            prerender: true
         }),
         prerender: {
-            entries: ['*'] 
+            entries: [
+                '/',
+                '/tools/',
+                '/tools/json-explorer',
+                '/tools/csv-json-converter',
+                '/tools/column-to-csv'
+            ] 
         },
         paths: {
 			// base: process.argv.includes('dev') ? '' : '/dev-toolbox',
