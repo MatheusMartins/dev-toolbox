@@ -1,17 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+	<head>
+		<title>Dev Toolbox</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="modulepreload" href="/dev-toolbox/_app/immutable/entry/start.D5Hyovbk.js">
+		<link rel="modulepreload" href="/dev-toolbox/_app/immutable/chunks/CycEyVWJ.js">
+		<link rel="modulepreload" href="/dev-toolbox/_app/immutable/chunks/DYxeUI9c.js">
+		<link rel="modulepreload" href="/dev-toolbox/_app/immutable/chunks/B5TRIV8c.js">
+		<link rel="modulepreload" href="/dev-toolbox/_app/immutable/entry/app.fsUSOs2e.js">
+		<link rel="modulepreload" href="/dev-toolbox/_app/immutable/chunks/B0pgxsXt.js">
+		<link rel="modulepreload" href="/dev-toolbox/_app/immutable/chunks/osOaXPr7.js">
+		<link rel="modulepreload" href="/dev-toolbox/_app/immutable/chunks/BVExYntR.js">
+		<link rel="modulepreload" href="/dev-toolbox/_app/immutable/chunks/C325k3UW.js">
+		<link rel="modulepreload" href="/dev-toolbox/_app/immutable/chunks/BlZDTsK_.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_1aayqnm = {
+						base: "/dev-toolbox",
+						assets: "/dev-toolbox"
+					};
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- A simple html that redirects to index.html -->
-        <meta http-equiv="refresh" content="0; url=/dev-toolbox/" />
-        <title>404 Not Found</title>
-    </head>
+					const element = document.currentScript.parentElement;
 
-    <body>
-        <h1>404 Not Found</h1>
-        <p>The page you are looking for does not exist. You will be redirected to the homepage.</p>
-    </body>
-
+					Promise.all([
+						import("/dev-toolbox/_app/immutable/entry/start.D5Hyovbk.js"),
+						import("/dev-toolbox/_app/immutable/entry/app.fsUSOs2e.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+	</body>
 </html>
