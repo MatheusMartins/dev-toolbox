@@ -11,6 +11,9 @@ const config = {
         }),
         prerender: {
             entries: ['*'] 
+        },
+        paths: {
+			base: '/dev-toolbox'
         }
     }
 };
