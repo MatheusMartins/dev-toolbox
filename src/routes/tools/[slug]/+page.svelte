@@ -3,7 +3,8 @@
 	import { tools } from '../../data';
 	import JsonExplorer from '$lib/tools/JsonExplorer.svelte';
 	import CsvJsonConverter from '$lib/tools/CsvJsonConverter.svelte';
-    import ColumnToCsv from '$lib/tools/ColumnToCsv.svelte';
+	import ColumnToCsv from '$lib/tools/ColumnToCsv.svelte';
+	import TextDiff from '$lib/tools/TextDiff.svelte';
 
 	const currentTool = $derived(tools.find((t) => t.slug === $page.params.slug));
 </script>
@@ -13,10 +14,12 @@
 		<JsonExplorer />
 	{:else if currentTool.slug === 'csv-json-converter'}
 		<CsvJsonConverter />
-    {:else if currentTool.slug === 'column-to-csv'}
-        <ColumnToCsv />
-    {:else}
-        <div class="error">Tool component not found</div>
+	{:else if currentTool.slug === 'column-to-csv'}
+		<ColumnToCsv />
+	{:else if currentTool.slug === 'text-diff'}
+		<TextDiff />
+	{:else}
+		<div class="error">Tool component not found</div>
 	{/if}
 {:else}
 	<div class="error">Tool not found</div>

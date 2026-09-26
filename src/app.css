@@ -92,6 +92,8 @@ summary::marker {
 
 	textarea {
 		width: 100%;
+		min-width: 0;
+		max-width: 100%;
 		padding: 0.5rem;
 		border: 1px solid #ccc;
 		border-radius: 4px;
@@ -144,6 +146,8 @@ summary::marker {
 
 	textarea {
 		width: 100%;
+		min-width: 0;
+		max-width: 100%;
 		padding: 0.5rem;
 		border: 1px solid #ccc;
 		border-radius: 4px;

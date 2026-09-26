@@ -47,8 +47,11 @@
 			Copy CSV
 		</button>
 	</div>
+
 	{#if jsonOutput}
-		<h3>CSV Output</h3>
-	    <p>{jsonOutput}</p>
+		<div class="max-w-full overflow-x-auto">
+			<h3>CSV Output</h3>
+			 <textarea class="text-wrap max-w-full whitespace-pre-wrap" rows="10" bind:value={jsonOutput}></textarea>
+		</div>
 	{/if}
 </div>

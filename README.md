@@ -7,14 +7,13 @@ A collection of tools for developers and operations analysts.
 - **JSON Explorer**: Explore and visualize JSON data structures.
 - **JSON-CSV Converter**: Convert JSON data to/from CSV format.
 - **Column to CSV Converter**: Convert a column of text into a CSV format with customizable prefixes and suffixes.
+- **TextDiff**: Compare two texts and show the differences.
 
 ### Quick Start
 
-To install the dev-toolbox, clone the repository and navigate to the project directory:
+To install the dev-toolbox, clone the repository, navigate to the project directory and run the following commands:
 
 ```bash
-git clone https://github.com/yourusername/dev-toolbox.git
-cd dev-toolbox
 npm install
 npm run dev # Start the development server
 npm run build # Build the project for production
